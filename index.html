@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    	<title>Rohan Patil</title>
+
+    	<meta charset=UTF-8>
+    	<meta http-equiv=X-UA-Compatible content="IE=edge">
+    	<meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    	<meta name=author content="Rohan Patil">
+    	<meta name="keywords" content="Homepage, Rohan, Patil, CS, Machcine Learning">
+    	<meta name="description" content="Hi! I am Rohan Patil and this is my homepage. I love maths, coffee and intelligent machines.">
+
+    	<meta property="og:title" content="Rohan Patil">
+    	<meta property="og:url" content="bridgesign.github.io" />
+    	<meta property="og:description" content="Hi! I am Rohan Patil and this is my homepage. I love maths, coffee and intelligent machines." />
+    	<meta property="og:locale" content="en_GB" />
+
+    	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    </head>
+
+    <style type="text/css">
+		body, html {
+			margin: 0; padding: 0;
+			overflow-x: hidden;
+			height: 100%; width: 100vw;
+		}
+
+		body {
+			background-image: url('./bg.jpg');
+		    background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-position: center;
+			background-size: cover;
+		}
+
+		.container {
+			position:fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		.card {
+			top: -20px;
+			opacity: 0.8;
+			background: rgba(250, 245, 250, 1.5);
+			transition: transform 0.5s;
+		}
+
+		.active {
+			width: 100%;
+			max-width: 1240px;
+			position: relative;
+			padding: 20px;
+			height: auto;
+		}
+
+		.noactive {
+			display: none;
+		}
+
+		.col .photo {
+			width: auto;
+			height: 230px;
+			display: block;
+			margin-right: 15px;
+		}
+
+		.col {
+			display: inline-block;
+			vertical-align: middle;
+		}
+		.section {
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 10px;
+		}
+
+		a {
+			color: darkblue;
+		}
+
+		.iam {
+			text-decoration: underline;
+			text-decoration-color: #666;
+			text-decoration-style: dotted;
+			color: #000;
+			font-size: 11pt;
+		}
+
+		.section a:link {text-decoration: none; color: #000000;}
+
+		.close {
+			position: absolute;
+			top: 10px; right: 50px;
+			text-decoration: none;
+			color: black;
+			font-weight: bold;
+			border: 2px solid black;
+			border-radius: 50%;
+			height: 1.2rem; width: 1.2rem;
+			text-align: center;
+			line-height: 1.3rem;
+			font-size: 1.2rem;
+		}
+
+
+    </style>
+
+    <body>
+        <div class="container">
+        	<div class="card">
+        		<div id="home" class="active">
+            		<div class="col">
+            			<img src="rohan.jpg" alt="Rohan Patil" class="photo" />
+            		</div>
+            		<div class="col">
+            			<H2>Rohan Patil</H2>
+            			<H4>B.Tech. Computer Science Student, IITGN</H4>
+    
+            			<div class="section">
+            				<a href="javascript:go('about')"><span class="iam">ABOUT ME</span></a>
+            			</div>
+            			<div class="section">
+            				<a href="" target="_blank"><span class="iam">RESUME</span></a>
+            			</div>
+            			<div class="section" style="margin: 0;">
+            				<a href="javascript:go('contact')"><span class="iam">COFFEE</span></a>
+            			</div>
+            		</div>
+            	</div>
+        		<div id="about" class="noactive">
+        			<a href="javascript:go('home')" class="close">&times;</a>
+        			<div style="width: 90%">
+        			<H1>About Me</H1>
+        			<p>
+        				Hi! I am Rohan Patil, a Computer Science Senior Undergraduate student at IIT Gandhinagar.
+        			</p>
+        			<p>
+        				I love to take causual walks and have many times wound up farther than expected, probabaly because I prefer solving questions while walking before doing it in writting. My projects have spanned various topics like Gravitational Waves, Road Transport Networks, COVID-19, NILM on Edge Devices; and I've also coded in various programming languages. If that sounds interesting, you might want to check out my <a href="" target="_blank">resume</a>.
+        			</p>
+        			<p>
+        				I like making things dumb enough for a computer, though I prefer to work on making computers intelligent. That is the reason why I picked Computer Science. I also like taking pictures similar to the background and love to learn new things ranging from dancing to chess.
+        			</p>
+        			<p>
+        				I am open to talk, discuss or collaborate on projects. So if anyone wants to talk, we can have a <a href="javascript:go('contact')"><span>coffee</span></a>.
+        			</p>
+        			</div>
+        		</div>
+        		<div id="contact" class="noactive">
+        			<a href="javascript:go('home')" class="close">&times;</a>
+        			<H1>Get In Touch</H1>
+        			<p>
+        				You can reach me at
+        			</p>
+        			<p>
+        				<b>Rohan Patil</b><br>Senior Undergraduate<br>Computer Science Department<br>IIT Gandhinagar
+        			</p>
+        			<p>
+        				<a href="https://www.linkedin.com/in/rohan-patil-27392714a/" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a>
+        				<a href="https://www.github.com/bridgesign" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+        			</p>
+        			<p>
+        				You can contact me electronically at my email <b>rohan [dot] patil [at] iitgn [dot] ac [dot] in</b>
+        			</p>
+        		</div>
+        	</div>
+        </div>
+    </body>
+
+    <script type="text/javascript">
+
+    	async function go(sec) {
+    		var card = document.getElementsByClassName('card')[0];
+    		// Code for Chrome, Safari, Opera
+    		card.style.WebkitTransform = "rotateX(90deg)"; 
+    		// Code for IE9
+    		card.style.msTransform = "rotateX(90deg)"; 
+    		// Standard syntax
+    		card.style.transform = "rotateX(90deg)";
+    		await new Promise(r => setTimeout(r, 500));
+    		var currsec = document.querySelector(".active");
+    		if (currsec) {
+    			currsec.className = 'noactive';
+    		}
+    		currsec = document.getElementById(sec);
+    		currsec.className = 'active';
+    		// Code for Chrome, Safari, Opera
+    		card.style.WebkitTransform = "rotateX(0deg)"; 
+    		// Code for IE9
+    		card.style.msTransform = "rotateX(0deg)"; 
+    		// Standard syntax
+    		card.style.transform = "rotateX(0deg)";     		
+    	}
+    </script>
+</html>
