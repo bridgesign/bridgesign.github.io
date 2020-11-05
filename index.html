@@ -24,6 +24,7 @@
 		body, html {
 			margin: 0; padding: 0;
 			overflow-x: hidden;
+			overflow-y: scroll;
 			height: 100%; width: 100vw;
 		}
 
@@ -33,25 +34,32 @@
 			background-attachment: fixed;
 			background-position: center;
 			background-size: cover;
+			overflow-x: hidden;
+			overflow-y: scroll;
 		}
 
 		.container {
-			position:fixed;
+			position: absolute;
+			overflow-x: hidden;
 			top: 50%;
-			left: 50%;
+			left: 50vw;
 			transform: translate(-50%, -50%);
 		}
 
 		.card {
-			top: -20px;
+			top: -10px;
+			width: 95vw;
 			opacity: 0.8;
 			background: rgba(250, 245, 250, 1.5);
 			transition: transform 0.5s;
+			max-width: 800px;
+			height: auto;
+			padding: 10px;
 		}
 
 		.active {
 			width: 100%;
-			max-width: 1240px;
+			max-width: 90vw;
 			position: relative;
 			padding: 20px;
 			height: auto;
@@ -63,7 +71,7 @@
 
 		.col .photo {
 			width: auto;
-			height: 230px;
+			height: 250px;
 			display: block;
 			margin-right: 15px;
 		}
