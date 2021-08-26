@@ -36,6 +36,18 @@
 			background-size: cover;
 			overflow-x: hidden;
 			overflow-y: scroll;
+			font-family: Tahoma, sans-serif;
+		}
+
+		H2 {
+			font-size: 1.5em;
+			text-transform: uppercase;
+			font-weight: 100;
+		}
+
+		H4 {
+			font-size: 1.2em;
+			font-weight: 500;
 		}
 
 		.container {
@@ -175,6 +187,30 @@
 		  to {opacity:0.8 ;}
 		}
 
+		/*
+		Source w3school
+		Scroll bar styling
+		*/
+		::-webkit-scrollbar {
+		  width: 5px;
+		}
+
+		/* Track */
+		::-webkit-scrollbar-track {
+		  background: #f1f1f1; 
+		}
+		 
+		/* Handle */
+		::-webkit-scrollbar-thumb {
+		  background: #888;
+		  height: 10px;
+		}
+
+		/* Handle on hover */
+		::-webkit-scrollbar-thumb:hover {
+		  background: #555; 
+		}
+
     </style>
 
     <body>
@@ -185,8 +221,17 @@
             			<img src="rohan.jpg" alt="Rohan Patil" class="photo" />
             		</div>
             		<div class="col">
-            			<H2>Rohan Patil</H2>
-            			<H4>B.Tech. Computer Science Student, IITGN</H4>
+            			<div>
+            				<H2>Rohan Patil</H2>
+            			</div>
+            			
+            			<div>
+            				<H4>M.S. Computer Science Student, UCSD</H4>
+            			</div>
+
+            			<div>
+            				<H4>B.Tech. Computer Science & Engineering, IIT Gandhinagar</H4>
+            			</div>
     
             			<div class="section">
             				<a href="javascript:go('about')"><span class="iam">ABOUT ME</span></a>
@@ -204,7 +249,7 @@
         			<div style="width: 90%">
         			<H1>About Me</H1>
         			<p>
-        				Hi! I am Rohan Patil, a Computer Science Senior Undergraduate student at IIT Gandhinagar.
+        				Hi! I am Rohan Patil, a Computer Science Graduate student at UC San Diego.
         			</p>
         			<p>
         				I love to take casual walks and have many times wound up farther than expected, probabaly because I prefer solving questions while walking before doing it in writing. My projects have spanned various topics like Gravitational Waves, Road Transport Networks, COVID-19, NILM on Edge Devices; and I've also coded in various programming languages. If that sounds interesting, you might want to check out my <a href="./resume.pdf" target="_blank">resume</a>.
@@ -223,13 +268,19 @@
         			<p>
         				You can reach me at
         			</p>
-        			<p>
-        				<b>Rohan Patil</b><br>Senior Undergraduate<br>Computer Science Department<br>IIT Gandhinagar
-        			</p>
-        			<p>
-        				<a href="https://www.linkedin.com/in/rohan-ppatil/" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a>
-        				<a href="https://www.github.com/bridgesign" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-        			</p>
+        			<div>
+	        			<div class="col">
+		        			<p>
+		        				<b>Rohan Patil</b><br>Graduate Student<br>Computer Science Department<br>University of California, San Diego
+		        			</p>
+	        			</div>
+	        			<div class="col">
+		        			<p>
+		        				<a href="https://www.linkedin.com/in/rohan-ppatil/" target="_blank"><i class="fab fa-linkedin-in fa-3x" style="padding-left: 100px;"></i></a>
+		        				<a href="https://www.github.com/bridgesign" target="_blank" style="padding-left: 100px;"><i class="fab fa-github fa-3x"></i></a>
+		        			</p>
+	        			</div>
+        			</div>
         			<p>
         				You can contact me electronically at my email <a href="javascript:Copy()" title="Copy" style="text-decoration: none; color: #000000;" id="email" class="popup"><span class="popuptext" id="myPopup">Copied!</span><b>rpatil [at] ucsd [dot] edu</b></a>
         			</p>
